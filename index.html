@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mikroedycja testowa TEI</title>
-        <script src="https://unpkg.com/ceteicean@latest/dist/CETEI.js"></script>
-        <style>
-    body { font-family: sans-serif; line-height: 1.5; margin: 2em; }
-    tei-pb { display: block; color: gray; margin: 1em 0; }
+<head>
+  <meta charset="UTF-8">
+  <title>Mikroedycja TEI – osadzony XML</title>
+  <script src="https://unpkg.com/ceteicean@latest/dist/CETEI.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2em; line-height: 1.5; }
     tei-seg[ana]::before { content: attr(ana) " | "; color: darkred; font-size: 0.8em; }
   </style>
-    </head>
-    <body>
-        <h1>Wczytuję edycję TEI…</h1>
-        
-        <div id="edition"></div>
-
-        <script id="xmlText" type="text/xml">
+</head>
+<body>
+  <h1>Mikroedycja TEI (XML w HTML)</h1>
+  <div id="edition">Wczytywanie edycji…</div>
             <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
@@ -957,12 +953,19 @@
       </body>
    </text>
 </TEI>
-        </script>
-        <script>
-    let CETEI = new CETEIcean();
-    CETEI.getHTML5("moj_tekst.xml", function(data) {
-      document.getElementById("edition").appendChild(data);
-    });
+ <script id="xmlText" type="text/xml">
+    <TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+        <fileDesc>
+          <titleStmt><title>Przykładowa mikroedycja</title></titleStmt>
+          <publicationStmt><p>Publikacja testowa</p></publicationStmt>
+          <sourceDesc><p>Źródło: rękopis X</p></sourceDesc>
+        </fileDesc>
+      </teiHeader>
+      <text>
+        <body>
+          <p>Idzie do <seg ana="#regionalizm">mlyna</seg>, gdzie <seg ana="#archaizm">modlił się</seg>.</p>
+        </body>
+      </text>
+    </TEI>
   </script>
-    </body>
-</html>
