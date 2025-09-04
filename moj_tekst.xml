@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Pamiętnik masażystki. Zeszyt pierwszy</title>
+            <title type="sub"> Spostrzeżenia nad ludźmi w końcu czwartego roku mej praktyki czyli
+               poznania ludzi.</title>
+            <author>Maria Jadwiga Strumff</author>
+            <editor>Monika Rudaś-Grodzka</editor>
+            <editor>Maria Prussak</editor>
+            <editor>Katarzyna Nadana-Sokołowska</editor>
+            <editor>Barbara Stępniak</editor>
+            <editor>Iwona Misiak</editor>
+            <respStmt>
+               <resp>XML transcription</resp>
+               <persName>Zespół Archiwum Kobiet IBL PAN</persName>
+            </respStmt>
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <orgName>Centrum Kompetencji Cyfrowych Uniwersytetu Warszawskiego</orgName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Instytut Badań Literackich Polskiej Akademii Nauk</publisher>
+            <pubPlace>Warszawa</pubPlace>
+            <date>2024</date>
+            <availability status="restricted">
+               <licence
+                  target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
+                  4.0)</p></licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc type="fair-copy">
+               <msIdentifier>
+                  <institution>Muzeum Warszawy </institution>
+                  <idno>MHW A/II/456/1</idno>
+               </msIdentifier>
+               <msContents>
+                  <p>Pierwsza część rękopisu pamiętnika Marii Jadwigi Strumff, opatrzona tytułem
+                     "Spostrzeżenia nad ludźmi w końcu czwartego roku mej praktyki czyli poznania
+                     ludzi."</p>
+               </msContents>
+               <physDesc>
+                  <p>zeszyt, wys. 17 cm, szer. 21 cm</p>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <textClass>
+            <catRef scheme="#genre" target="#diary"/>
+            <catRef scheme="#form" target="#manuscript"/>
+            <catRef scheme="#feature" target="#note"/>
+            <catRef scheme="#feature" target="#person"/>
+            <catRef scheme="#feature" target="#place"/>
+         </textClass>
+         <langUsage>
+            <language ident="pl">Polish</language>
+         </langUsage>
+         <particDesc>
+            <listPerson>
+               <person xml:id="SSz">
+                  <persName>Stanisław (Salomon) Szancer</persName>
+                  <note>(1817 Brzoza – 1876 Piotrków) – ojciec Marii Jadwigi, lekarz. Syn lekarza
+                     Jakuba Szancera i Salomei (Gitli Gołdy) z Cymblerów. Miał siedmioro rodzeństwa.
+                     Studia medyczne ukończył w Wilnie w 1842 r. W 1845 r. ożenił się w Krakowie z
+                     Emmą z Löwensteinów, z którą miał 7 dzieci (dwóch synów zmarło w
+                     dzieciństwie).</note>
+               </person>
+               <person xml:id="ESz">
+                  <persName>Emma Szancer</persName>
+                  <note>(1822 Bydgoszcz – 1893 Warszawa) – matka Marii Jadwigi. Była córką Abrahama
+                     Löwensteina i Rozalii z Flatauów. Ta zaś była wnuczką Szmula Zbytkowera i
+                     Judyty Jakubowiczowej. Została pochowana w grobie rodzinnym na żydowskim
+                     cmentarzu na Pradze, który ufundował jej prapradziadek.</note>
+               </person>
+               <person xml:id="HS">
+                  <persName>Hipolit Strumff</persName>
+                  <note>(1853 Warszawa – 1916 Wiedeń) – mąż Marii Jadwigi, syn Adolfa Izydora
+                     (Ojzera) Strumpfa i Zofii (Cypy) z Horowitzów. Adolf Izydor (Ojzer) Strumpf
+                     (1823-1857) – ojciec Hipolita był nauczycielem szkoły elementarnej w Warszawie.
+                     Rok przed śmiercią przyjął chrzest w Kościele ewangelicko-reformowanym.
+                     Wcześniej uczynili to czterej jego bracia. Konwersji nie dokonała natomiast
+                     matka Zofia (Cypa) z Horowitzów (ur. 1825 gub. kijowska) ani ich syn Hipolit.
+                     Być może oznaczało to, że rodzice Hipolita rozwiedli się, w każdym razie
+                     Hipolit wychowywał się bez ojca. Dystans wobec rodziny Hipolita wynikał zapewne
+                     z niższego statusu materialnego i społecznego.</note>
+               </person>
+               <person xml:id="SSt">
+                  <persName>Stanisław Strumff</persName>
+                  <note>(16 VII 1881 Warszawa – 4 VII 1946 Warszawa) – najstarszy syn Marii Jadwigi
+                     i Hipolita Strumffów, ochrzczony 23 lipca 1891 r. w parafii Wszystkich Świętych
+                     w Warszawie, aptekarz, w 1909 r. ożenił się z Heleną Nowakowską.</note>
+               </person>
+               <person xml:id="ASt">
+                  <persName>Alfred Strumff</persName>
+                  <note>(ur. 1883 Warszawa) – średni syn Marii Jadwigi i Hipolita Strumffów,
+                     ochrzczony 23 lipca1891 r., kupiec, ożeniony z 1910 r. z Marią
+                     Wendyńską.</note>
+               </person>
+               <person xml:id="RSt">
+                  <persName>Róża Strumff</persName>
+                  <note>(ur. 1884) – jedyna córka Marii Jadwigi i Hipolita Strumffów, ochrzczona 9
+                     września 1891 r.,wyszła za mąż za Wacława Michała Dąbrowskiego, w akcie ślubu
+                     określona jako właścicielka sklepu.</note>
+               </person>
+               <person xml:id="TSt">
+                  <persName>Tadeusz Strumff</persName>
+                  <note>(1 VI 1887 Warszawa – 7 I 1972 Warszawa) – najmlodszy syn Marii Jadwigi i
+                     Hipolita Strumffów. Uczył się w szkole Chrzanowskiego. W 1908 r. ukończył II
+                     Gimnazjum w Warszawie. Po odbyciu rocznej służbie wojskowej studiował mechanikę
+                     na politechnice we Lwowie. W czasie I wojny światowej służył w armii rosyjskiej
+                     w wojskach kolejowych. Od 1918 r. w Wojsku Polskim, w wojskach kolejowych.
+                     Dosłużył się stopnia kapitana WP. W 1931 r. ożenił się z dziennikarką Cecylią
+                     Moszkowicz-Mirską. II wojnę światową spędził jako internowany w Rumunii. Po
+                     wojnie pracował w przedsiębiorstwach cywilnych.</note>
+               </person>
+               <person xml:id="SLL">
+                  <persName>Stefania Libkind-Lubodziecka</persName>
+                  <note>(1846 Będzin – Warszawa) – najstarsza siostra Marii Jadwigi. W 1871 r.
+                     wyszła za mąż za lekarza Arnolda Władysława Libkind-Lubodzieckiego. Początkowo
+                     mieszkali w Piotrkowie, gdzie urodził się ich najstarszy syn Henryk (1873-1933
+                     Warszawa). Ponadto mieli jeszcze troje dzieci Stanisława (1879 Warszawa – 1975
+                     Penley); Janinę Marię (1887 Warszawa – 1913 Warszawa) i Jerzego (1888 Warszawa
+                     – 1952) Warszawa). Razem z mężem i dwoma starszymi synami przyjęli chrzest w
+                     1882 r. Jednocześnie konwersji na katolicyzm dokonał brat Arnolda Ludwik
+                     Libkind. W 1888 r. podążyły za braćmi Libkindami ich siostry Dorota Hertz i
+                     Salomea Muszkat z rodzinami.</note>
+               </person>
+               <person xml:id="LSz">
+                  <persName>Ludwika Szancer</persName>
+                  <note>(1849-1926) – średnia z sióstr Szancerówien; w 1871 r. wyszła za mąż za
+                     lekarza Bernarda Szancera (1837-1904), syna Wolfa i Perli z Szenmanów. Bernard
+                     Szancer praktykował w Warszawie. Mieli jednego syna Wacława Wiktora
+                     (1873-1933). Przyjęli wraz z osiemnastoletnim synem chrzest 29 sierpnia 1891 r.
+                     Wiemy również, że konwertytą był brat Bernarda Adam Szancer.</note>
+               </person>
+               <person xml:id="SJSz">
+                  <persName>Stanisław Jan Szancer</persName>
+                  <note>(1860 Piotrków - 1915?) – brat Marii Jadwigi, najmłodszy z rodzeństwa
+                     Szancerów, prawnik, adwokat. Urodził się jako Jakub Franciszek, przy chrzcie 23
+                     listopada 1882 r. przyjął imiona Stanisław Jan. Kilka dni później ożenił się z
+                     Natalią Adler, baletnicą, córką Ludwika Adlera, baletmistrza Teatru Wielkiego w
+                     Warszawie. Małżeństwo miało pięcioro dzieci: Władysława (1884-1940),
+                     policjanta, więźnia NKWD, zamordowanego w Miednoje, Wacława (ur. 1885),
+                     Czesławę Natalię (ur. 1887), Henrykę (ur. 1889) i Jerzego (1891).</note>
+               </person>
+               <person xml:id="JP">
+                  <persName>Józefa Prager</persName>
+                  <note>(1848 Będzin – 1931 Kraków) – średnia siostra Marii Jadwigi. W 1880 roku
+                     wyszła za maż za lekarza Samuela (Stanisława) Pragera (1847 Warszawa – 1919
+                     Kraków). Mieszkali w Warszawie, później w Krakowie. Mieli jednego syna,
+                     socjalistycznego polityka Adama Pragiera (1886-1976). Wedle jego wspomnień
+                     małżeństwo rodziców nie było udane, a matka miała nadopiekuńcze cechy. Adam
+                     Pragier wyznał, że w dzieciństwie najbliższą mu osobą była niania Katarzyna.
+                     Patrz: Czas teraźniejszy, Londyn 1975, s. 201.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="PiotrkowTrybunalski">
+                  <placeName>Piotrków</placeName>
+                  <note>Miasto w centralnej części Królestwa Polskiego, leżące w guberni radomskiej;
+                     od 1867 r. siedziba gubernii. W 1871 r. mieszkało tu blisko 15 tys. osób, w tym
+                     39% Żydów. Piotrków od połowy XIX wieku stał się siedzibą rodziny Szancerów. W
+                     ostatnich dekadach XIX wieku mieszkali tutajEmma Szancer, jej syn Stanisław Jan
+                     z rodziną, jej teściowa Salomea Szancerz córką Domicellą oraz synowieNapoleona
+                     Szancera Jakub Aleksander i Józef z rodzinami. Patrz: Indeks: Księgi ludności
+                     miasta Piotrkowa, Archiwum Państwowe w Piotrkowie Trybunalskim.
+                     http://brawo.xon.pl/archiwum/pliki/ksiegi_ludnosci_miasta_Piotrkowa.pdf, k.
+                     1567. [dostęp 2 III 2023] </note>
+               </place>
+               <place xml:id="Swietojanska">
+                  <placeName>Świętojańska</placeName>
+                  <note>Ulica w Warszawie</note>
+               </place>
+               <place xml:id="Marszalkowska">
+                  <placeName>Marszałkowska</placeName>
+                  <note>Ulica w Warszawie</note>
+               </place>
+               <place xml:id="Nalewki">
+                  <placeName>Nalewki</placeName>
+                  <note>Ulica w Warszawie</note>
+               </place>
+               <place xml:id="Bednarska">
+                  <placeName>Bednarska</placeName>
+                  <note>Ulica w Śródmieściu Warszawy, nazwa funkcjonuje od XVIII w.</note>
+               </place>
+               <place xml:id="Chlodna">
+                  <placeName>Chłodna</placeName>
+                  <note>Ulica w Warszawie</note>
+               </place>
+               <place xml:id="Wielka">
+                  <placeName>Wielka</placeName>
+                  <note>Jedna z głównych ulic Śródmieścia Warszawy, obecnie nie istnieje.</note>
+               </place>
+               <place xml:id="KrakowskiePrzedmiescie">
+                  <placeName>Krakowskie Przedmieście</placeName>
+                  <note>Ulica w Warszawie</note>
+               </place>
+               <place xml:id="Praga">
+                  <placeName>Praga</placeName>
+                  <note>Dzielnica Warszawy</note>
+               </place>
+            </listPlace>
+
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_1.jpg" n="1"
+               xml:id="pb-1r-1"/>
+            <lb n="1"/>
+            <ab>Spostrzeżenia nad ludźmi w końcu czwartego roku <lb n="2"/>mej
+               praktyki czyli poznania ludzi.</ab>
+            <ab><lb n="3"/>Gałęź ta medycyny zajęła mnie ogromnie, wychowana <lb n="4"/>w dostatkach
+               wypieszczona w domu<anchor n="1" xml:id="note-t-1"/>, przez męża<anchor n="2"
+                  xml:id="note-t-2"/>, z całą <lb n="5"/>gorliwością oddałam się pracy, z zaparciem
+               się siebie, <lb n="6"/>oczekiwałam chwili kiedy szłam do szpitala<anchor n="3"
+                  xml:id="note-t-3"/>, wychodziłam <lb n="7"/>smutna. Cieszyłam się nadzieją że będę
+               mogła pomagać <lb n="8"/>ludziom, ulżyć cierpieniom. Wychowana w surowych <lb n="9"
+               />zasadach moralności, religii, patrzałam na świat <lb n="10"/>różowo. Byłam
+               szorstką, dziką, od ludzi uciekałam, <lb n="11"/>nie miałam w sobie nic kobiecego,
+               ubrać <lb n="12"/>się było dla mnie karą. Ambicyą moją całe życie <lb n="13"/>była
+               nauka, poezya, malarstwo, żadne ziemskie <lb n="14"/>namiętności. Naraz trzeba się
+               było uczyć mówić <lb n="15"/>by przyzwyczaić się do banalnych rozmów, do <lb n="16"
+               />których miałam całe życie awersyą, by uprzyjemnić <lb n="17"/>przykrość leczenia;
+               myśleć o tem by kapelusz <lb n="18"/>nie był krzywo, wyrzec się zasad i przekonań.
+                  <lb n="19"/>Od pierwszej chwili postanowiłam badać ludzi, <lb n="20"/>wybitniejsze
+               pacjentki opiszę, oraz wpływ <lb n="21"/>jaki wywarły na mnie.</ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_2.jpg" n="2"
+                  xml:id="pb-1v-2"/><lb n="22"/>Nigdy niepewna siebie, pomimo gruntownej znajomości
+                  <lb n="23"/>przedmiotu, pierwsze pacjentki, prawie, że odmawiałam <lb n="24"/>i
+               cieszyłam się kiedy odchodziły. Teorya bez praktyki <lb n="25"/>samoistnej zdawała
+               mi się niczem. Kiedy pierwszy <lb n="26"/>raz, miałam pójść do obcego domu, straszne
+                  <lb n="27"/>uczucia mną miotały, wyrzekłam się swego ja, <lb n="28"/>przeszłości,
+               tradycyi, ale to w teoryi, ta myśl, że <lb n="29"/>mi ktoś może ubliżyć! Postanowiłam
+               sobie śmiało, <lb n="30"/>a nogi i ręce mi drżały, z głową do góry iść na pierwszy
+                  <lb n="31"/>ogień. Pierwszą moją pacjentką była na szczęście <lb n="32"/>gąska
+               bogata z gminu, która sobie uważała za <lb n="33"/>zaszczyt mnie u siebie mieć „bo
+               pewno bywam <lb n="34"/>w całej arystokracyi”. Raziło mnie to ciągłe <lb n="35"
+               />ściskanie rąk ludzi obcych, a paliły wsuwane <lb n="36"/>pieniądze. Wstydziłam się,
+               jakby ktoś mi <lb n="37"/>jałmużnę dawał. Straszne to jest brać się <lb n="38"/>do
+               pracy ludziom zepsutym dostatkami. W <lb n="39"/>pierwszym roku wybitniejsze były;
+               tylko jedna <lb n="40"/>kobieta 60 letnia, która kazała podziwiać <lb n="41"/>swe
+               kształty, nawiasem mówiąc zwiędły wdzięk, <lb n="42"/>wzbudzało to we mnie wstręt, i
+               brzydziłam się <lb n="43"/>jej jako moralnie zepsutey. Śmieszną mi się <lb n="44"
+               />wydała również pewno coś około tego, która </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_3.jpg" n="3"
+                  xml:id="pb-2r-3"/><lb n="45"/>w obec mnie udawała młodą, twarz massowała, <lb
+                  n="46"/>dla świeżości, mówiła ciągle o miłościach swych, <lb n="47"/>syna draba,
+               uważała za dziecko kiedy, wchodziłam <lb n="48"/>mówiła „leve toi”<anchor n="4"
+                  xml:id="note-t-4"/> i raz, kiedy ten chłopiec odważył <lb n="49"/>się do mnie
+               uśmiechnąć, przeprosiła mnie że <lb n="50"/>chwilowo wyjeżdża, zdawało mi się to tak,
+               głupim <lb n="51"/>ja która, nie rozumiem co flirt, co się podobać <lb n="52"/>i
+               uważają mnie za kobietę Ludzie w salonie są <lb n="53"/>inni jak w sypialni. Dama
+               jedna, która dla blagi <lb n="54"/>wydawała setki, raz prosiła mnie by jej dać trochę
+                  <lb n="55"/>kremu<anchor n="5" xml:id="note-t-5"/>, bo Jej rąk nie kremowałam, a
+               kiedy chciałam <lb n="56"/>wziąść bilet wizytowy, krzyknęła, że szkoda, jakież <lb
+                  n="57"/>to nizkie! Były to wszystkie jeszcze skromne <lb n="58"/>pacjentki, nie
+               pamiętam już co prawda ich usposo- <lb n="59"/>bień. W końcu pierwszego roku praktyka
+               zaczęła <lb n="60"/>mi się poprawiać, i dawać mi robić obserwacye <lb n="61"/>nad
+               kobietami, ich charakterem uczciwością itp. <lb n="62"/>Poszłam do pewnego domu,
+               zastałam dwie młode <lb n="63"/>kobiety o g 9 r w łóżkach, jedna leżała dla <lb
+                  n="64"/>wywołania efektu. Wzięłam je za kokoty, dwie <lb n="65"/>siostry, jeden
+               mąż o którym się nie mówi, <lb n="66"/>puste uśmiechnięte, serdeczne z osobą
+               nieznajomą <lb n="67"/>z niesmakiem rozmawiałam z niemi, wtenczas </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_4.jpg" n="4"
+                  xml:id="pb-2v-4"/><lb n="68"/>na punkcie moralności byłam jeszcze bardzo surową.
+                  <lb n="69"/>Po kilku dniach przekonałam się z biletu wizyto- <lb n="70"/>wego
+               jednej, że należy do tutejszej arystokracyi, <lb n="71"/>nazwisko znane, dawało
+               rękojmię, że się można <lb n="72"/>z niemi bliżej zaznajomić. Obserwacye mnie <lb
+                  n="73"/>nie myliły, że tamta źle żyje z mężem. Otóż <lb n="74"/>ta pani C.
+               otworzyła mi oczy, kpiła z mej naiwności. <lb n="75"/>Hania, młoda, inteligentna,
+               zapałała do mnie <lb n="76"/>miłością jakąś nieznaną dla mnie, pieszczoty <lb n="77"
+               />Jej denerwowały mnie strasznie, tak że postano-<lb n="78"/>wiłam Ją porzucić,
+               chciałam być zawsze trzeźwą. <lb n="79"/>Nic nie pomogło, tak mnie strasznie opętała,
+                  <lb n="80"/>działała mi na zmysły, ciągłemi całusami, kwiatami, <lb n="81"
+               />listami pełnemi miłosnych zapewnień. Ja Ją <lb n="82"/>pokochałam, ale w tym
+               stosunku było coś <lb n="83"/>nienaturalnego, było to więcej jak przyjaźń, miłość <lb
+                  n="84"/>która rujnuje. Pod jej wpływem zaczęłam się <lb n="85"/>zmieniać,
+               zapatrywać inaczej na kobiety lekkie, <lb n="86"/>nie dziwiłam się że mają kochanków,
+               tłoma- <lb n="87"/>czyłam je, a nawet broniłam. Nie widziałam <lb n="88"/>Jej ośm
+               miesięcy, wywietrzała mi z głowy. <lb n="89"/>Po pierwszem uściśnieniu ręki miłość
+                  <lb n="90"/>się wzmogła, doszła do najwyższej potęgi. </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_5.jpg" n="5"
+                  xml:id="pb-3r-5"/><lb n="91"/>Ta chwila rozluźniła nas, chciałam się otrząsnąć <lb
+                  n="92"/>z tego, zanadto Ją kochałam nie mogłam. Zrywałam <lb n="93"/>ciągle,
+               zawsze mnie przebłagała. Mam naturę <lb n="94"/>męzką, poznałam ładniejsze, zaczęłam
+               patrzeć <lb n="95"/>na Nią bez okularów, zmysły pociągały do Niej, <lb n="96"/>ale z
+               całym cynizmem wyznała mi że ma kochanka <lb n="97"/>widząc u Niej brak zasad
+               moralnych, religijnych, <lb n="98"/>pełną obłudę, poznawszy, że byłam narzędziem <lb
+                  n="99"/>Jej zmysłów, że namiętność Jej nie zna granic, <lb n="100"/>po za tem jest
+               to zero, egoistka, u której niema <lb n="101"/>nic świętego, lekkomyślna, zrobiła na
+               mnie <lb n="102"/>wrażenie zwyczajnej kokoty i zerwałam z Nią tą <lb n="103"/>razą
+               chyba niepowrotnie. Trzy lata trwał ten stosunek <lb n="104"/>niezwyczajnej
+               przyjaźni. Jednocześnie z p. C. miałam <lb n="105"/>aktorkę, naiwna dosyć jeszcze
+               byłam, prosiła by <lb n="106"/>Ją uważać za osobę prywatną, że ma starego męża <lb
+                  n="107"/>ja <!--skreslenie: był-->będę Jej młodym mężem, nie rozumiałam <lb
+                  n="108"/>wtenczas tego znaczenia, wierzyłam w Jej niewinność <lb n="109"/>lubiłam
+               Ją bardzo, oświadczała mi się również z <lb n="110"/>miłością, czerwieniła się na mój
+               widok, „J’étais <lb n="111"/>du grecque pour moi”<anchor n="6" xml:id="note-t-6"/>.
+               Raz będąc u Niej spotka-<lb n="112"/>łam Jej kochanka, który był wraz z żoną,
+               plunęłam <lb n="113"/>Jej w oczy i znajomość skończona. </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_6.jpg" n="6"
+                  xml:id="pb-3v-6"/><lb n="114"/>Siedziałam z niemi naumyślnie parę godzin, <lb
+                  n="115"/>by to co się czyta widzieć w życiu. Bezczelność <lb n="116"/>tej kobiety
+               i przyjaźń Jej dla żony swego <lb n="117"/>kochanka w obec Niego, przechodzi granice
+                  <lb n="118"/>pojęcia ludzkiego, przytem głupota tej żony. <lb n="119"/>Rok miałam
+               dopiero praktyki, ale dosyć już <lb n="120"/>doświadczenia, postanowiłam być ostrożną
+               w znajomości. <lb n="121"/>Zjawiła się u mnie kobieta znana w świecie <lb n="122"
+                  />naukowym<anchor n="7" xml:id="note-t-7"/> i złych obyczajów, uciekałam z
+               początku <lb n="123"/>jak od zarazy. Złe z blizka, czyli djabeł nie <lb n="124"/>tak
+               zły jak go malują. Przyzwoitem obejściem <lb n="125"/>swoim wykształceniem i
+               inteligencyą potrafiła <lb n="126"/>mnie tak ująć, że przekładałam Jej towarzystwo,
+                  <lb n="127"/>jak wszystkich najmoralniejszych kobiet. <lb n="128"/>Obcowanie z Nią
+               przez rok cały codzień, zmieniło <lb n="129"/>mnie do gruntu. Otworzyło mi oczy na
+               świat, <lb n="130"/>zaczęłam bronić namiętności ludzkie, a nigdy <lb n="131"
+               />potępiać. Panów nie będę opisywać, bo prawie <lb n="132"/>każdy uważał mnie za
+               kobietę, co mi w końcu <lb n="133"/>odebrało swobodę, i najczęściej widząc, że ze <lb
+                  n="134"/>mnie zły materyał, więcej się nie zjawiali. </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_7.jpg" n="7"
+                  xml:id="pb-4r-7"/>
+               <lb n="135"/>P. X. pacjentka moja z którą zaprzyjaźniłam <lb n="136"/>się bardzo,
+               mająca synów dorosłych, zdawała mi <lb n="137"/>się uosobieniem cnoty. W rok, od
+               naszej zna- <lb n="138"/>jomości, dowiedziałam się dokładnie o Jej kochanku, <lb
+                  n="139"/>dla czego Jej to przebaczam, nie wiem, ale nic <lb n="140"/>mnie od Niej
+               oddalić nie może. Uważam, <lb n="141"/>że większa część kobiet są
+                  histeryczkami<anchor n="8" xml:id="note-t-8"/>. <lb n="142"/>Bywałam w domu
+               bogobojnym, skromnym, <lb n="143"/>pani domu wdowa, czerwieniła się i wyrabiała <lb
+                  n="144"/>przy massażu niemożebnie, raz mnie za nogę <lb n="145"/>złapała. Nie wiem
+               co we mnie upatrują męzkiego, <lb n="146"/>jedna z aktorek, jak mi mówiono wściekała
+               się <lb n="147"/>za mną, cóż, kiedy mnie się przez cztery lata <lb n="148"/>podobały
+               tylko dwie, jedna wzajemnie, a drugiej <lb n="149"/>duma moja nie pozwalała tego
+               wyjawić. P.X. <lb n="150"/>typ parweniuszki, którą musiałam kpić co chwila <lb
+                  n="151"/>udającą świętą, a mąż umarł ze zmartwienia, <lb n="152"/>wszystkie wróble
+               na dachu śpiewają o Jej miłostkach. <lb n="153"/>Kokotka z gminu, która mi spokoju
+               nie dawała swoją <lb n="154"/>miłością, że Ją musiałam wyrzucić za drzwi. <lb n="155"
+               />Kokota, która mi zaimponowała swoim odezw- <lb n="156"/>aniem się, że schyla czoło
+               przed cnotami, ale <lb n="157"/>sama nią nie jest. Dużo, dużo typów </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_8.jpg" n="8"
+                  xml:id="pb-4v-8"/><lb n="158"/>o których mi się pisać nie chce. Kokota, którą <lb
+                  n="159"/>znam opowiada mi o sobie jako o swoim <lb n="160"/>sobowtórze z
+               podobieństwa, i opowiada swoje <lb n="161"/>zdrady niby innej, bezczelność nie do
+               uwierzenia. <lb n="162"/>Za pieniądze dużo wymagają widzenia, wszystkie <lb n="163"
+               />te kokoty są tak strasznie zdenerwowane. <lb n="164"/>Znudziło mnie to wszystko,
+               zapragnęłam <lb n="165"/>porządnej kobiety. Ucieszyłam się, przyszła <lb n="166"
+               />piękna, ród widać po ręku i ciele. W mowie <lb n="167"/>cynizm najwyższy, dla tego
+               myślałam że <lb n="168"/>żartuje. Ta kobieta sprzedaje się, mając męża i <lb n="169"
+               />dziecko, z zimną krwią dla fatałaszków. Jakież <lb n="170"/>rozczarowanie! Od dwóch
+               miesięcy poniża mi <lb n="171"/>się w listach, nie może się zebrać na zapłacenie <lb
+                  n="172"/>kilkunastu rubli. Brzydzę się zwykle fantazyą, jak <lb n="173"/>mi się
+               podoba pacjentka zapominam, że pracuję <lb n="174"/>na chleb poświęcam całe moje siły
+               i czas by Ją <lb n="175"/>zadowolić. Przy moich strasznych cierpieniach <lb n="176"
+               />moralnych, borykaniu się z losem i materyalnych <lb n="177"/>okropnych troskach, są
+               chwile gdzie tylko, zdaje <lb n="178"/>mi się samobójstwo mogło by kres położyć memu
+            </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_9.jpg" n="9"
+                  xml:id="pb-5r-9"/><lb n="179"/>męczeństwu, na które niemam odwagi i chciałabym <lb
+                  n="180"/>wychować dzieci, muszę mieć coś co by, chwilami <lb n="181"/>myśli moje,
+               które nieraz zabiją, bo łzy tłoczą <lb n="182"/>się, a uśmiech na twarzy, by nie
+               wywołać <lb n="183"/>litości, każde słowo, nieraz jest dla mnie <lb n="184"/>męką, a
+               muszę mieć zawsze humor. Krwawą <lb n="185"/>bo trudniejszą jak na scenie, bo nie
+               rozpustną <lb n="186"/>a straszną, ale mi płacą za to, muszę powtarzam <lb n="187"
+               />coś mieć by zapomnieć na chwilę o wszystkiem. <lb n="188"/>Od trzech lat było moim
+               marzeniem dostać jedną <lb n="189"/>z Pań o której piękności i elegancyi tyle
+               słyszałam. <lb n="190"/>Przypadek zrządził że po mnie przysłała. Każda nowa <lb
+                  n="191"/>pacjentka spać mi nie daje. Nowy dom nowi ludzie, <lb n="192"/>myśl czy
+               ja Jej co pomogę, jak się ze mną obejdzie. <lb n="193"/>Gościnność u nas czasem bywa
+               za wielka i serdeczna, <lb n="194"/>o tej damie właśnie słyszałam, że duma Jej <lb
+                  n="195"/>przechodzi granice. Z bijącem sercem poszłam do Niej. <lb n="196"/>Mars
+               na czole oznaką dumy, przyjęcie grzeczne <lb n="197"/>ale wyniosłe oblały mnie lodem.
+               Grzeczność Jej <lb n="198"/>ujmowała mnie, nieraz krew się we mnie <lb n="199"
+               />burzyła na myśl, że nigdzie takich form nie <lb n="200"/>przechodziłam, chociaż
+               bywam w najwyższych <lb n="201"/>sferach, ale mars zaczął znikać, słodycz w obejściu
+            </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_10.jpg" n="10"
+                  xml:id="pb-5v-10"/><lb n="202"/>dziwna wrodzona dobroć, niezwyczajna delikatność i
+                  <lb n="203"/>piękność ciała przyciągały mnie do Niej tak, <lb n="204"/>czekałam
+               tej chwili kiedy do Niej idę, a zawsze <lb n="205"/>mi było za prędko wyjść.
+               Przyzwyczaiłam się <lb n="206"/>do Niej i przywiązałam tak, że wrogiem <lb n="207"
+               />moim był ten, który ważył o Niej nie <lb n="208"/>mówić wszystko dobre. Gdyby
+               popełniła <lb n="209"/>grzech śmiertelny, poszła bym za Nią w piekło <lb n="210"/>i
+               stanęła bym po Jej stronie. Kiedy nadeszła <lb n="211"/>chwila rozstania, nie mogłam
+               sobie miejsca <lb n="212"/>znaleść, smutek mnie opanował straszny. <lb n="213"/>Myśl,
+               że może Jej już nigdy nie zobaczę. W kilka <lb n="214"/>dni dopiero ocknęłam się,
+               przyszło mi na <lb n="215"/>myśl, że z chwilą kiedy Ci, Ta, którą uwielbiasz <lb
+                  n="216"/>zapłaciła zapomniała o Twoim istnieniu, o <lb n="217"/>dowodach Twej
+               dobroci względem Niej, jakie <lb n="218"/>Jej dawałaś w staraniu się o zadowolnienie
+                  <lb n="219"/>Jej, grzeczność Jej to dobre wychowanie, dobre <lb n="220"/>jak dla
+               każdej swojej służącej okazuje, to mnie <lb n="221"/>otrzeźwiło, i nakazało milczeć
+               wszystkim <lb n="222"/>moim uczuciom, mojej filozofii, a jednak <lb n="223"/>tak
+               trudno mi o Niej zapomnieć. </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_11.jpg" n="11"
+                  xml:id="pb-6r-11"/><lb n="224"/>W tym samym czasie zaczęłam bywać u biblijnej <lb
+                  n="225"/>Judyty z ubioru, zbogaceni ludzie przemysłowcy, <lb n="226"/>którym
+               służba mówi „jaśnie Pani, a podaje list <lb n="227"/>w ręku, chcą być panami, ale nie
+               umieją, wprost <lb n="228"/>do operetki. Wszystkie typy, o których by <lb n="229"
+               />można pisać tomy, są niczem w porównaniu <lb n="230"/>z tą, która była u mnie w
+               tych dniach. Kobieta <lb n="231"/>tęga zdrowa z sfer najlepszych 48 lat, która <lb
+                  n="232"/>raz już u mnie była przed dwoma laty, zako- <lb n="233"/>chała się że
+               zwarjowała na punkcie piękności, <lb n="234"/>od dwóch lat straciła 8 tys. rubli na
+               leczenie <lb n="235"/>dwa razy się truła, a nawet dwa razy Dr. K. <lb n="236"
+               />operował Jej twarz<anchor n="9" xml:id="note-t-9"/>, by Jej rozum do równo- <lb
+                  n="237"/>wagi doprowadzić, korzystając z Jej warjacey i <lb n="238"/>mnie
+               obiecywała Bóg wie co by się podjąć coś <lb n="239"/>Jej poradzić na młodość, ale
+               sumienie nie <lb n="240"/>pozwala mi na to, zrobiła na mnie wraże- <lb n="241"/>nie
+               przygnębiające, mówiąc ciągle, że jest <lb n="242"/>warjatką i zdenerwowała
+               strasznie. Dałam <lb n="243"/>Jej dwa papierosy<anchor n="10" xml:id="note-t-10"/> na
+               uspokojenie. <lb n="244"/>Typ kobiety zwierzę. Kobieta zrujnowana </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_12.jpg" n="12"
+                  xml:id="pb-6v-12"/><lb n="245"/>fizycznie, trzy miesiące po operacyi, figura <lb
+                  n="246"/>księdza, kości i zkóra, ciągle się boi, że Ją <lb n="247"/>obmówią.
+               Powiada: „ja to byłam taka łakoma <lb n="278"/>to, ślinka Jej idzie kiedy to mówi, że
+               była- <lb n="249"/>bym 10 razy dziennie, gdyby pierwszy mąż był <lb n="250"/>chciał”,
+               a drugi trzy godziny po ślubie (60letni) <lb n="251"/>powiedział Jej że jest zanadto
+               wyczerpany i żyć <lb n="252"/>z Nią nie może. Tej kobiety myślą jedynie <lb n="253"
+               />jest kto z kim żyją!-- <lb/>Setki osób, które widzę z któremi rozmawiam, <lb n="254"
+               />zrobiły ze mnie innego człowieka. Dziwię się <lb n="255"/>jak ktoś mi cytuje
+               porządną kobietę do tego <lb n="256"/>stopnia nawet, że dzisiaj imię nowożeńca pewnej
+                  <lb n="257"/>rodziny arystokratyczney zwróciło moją uwagę i <lb n="258"/>pytałam
+               się gdzie Ojca szukać i nie omyliłam <lb n="259"/>się. W rodzinie śmieją się, że się
+               nudzę w <lb n="260"/>towarzystwie porządnych kobiet, co niestety <lb n="261"/>prawda!
+               Przyzwyczaiłam się do lekkich <lb n="262"/>rozmów, niema dla mnie tajemnic. </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_13.jpg" n="13"
+                  xml:id="pb-7r-13"/>
+               <lb n="263"/>Z zimną krwią słucham opowiadań Panów <lb n="264"/>z życia ich, coby
+               dawniej było mnie raziło i <lb n="265"/>nikt by sobie nie był pozwolił bez obrazy mi
+               to <lb n="266"/>opowiedzieć. Nie dziwię się niczemu. Bronię <lb n="267"/>wszystkie
+               kobiety, chyba że <!--tu skreślenie?--> nie lubię. Pacjentki, <lb n="268"/>które
+               lubię ubieram w cnotę, albo tłuma- <lb n="269"/>czę, że gdyby były świętemi, nie
+               miały by dla <lb n="270"/>mnie uroku. Każdemu wolno robić co mu <lb n="271"/>się
+               podoba, zawsze znajduję okoliczności <lb n="272"/>łagodzące. Niema dla mnie nic
+               złego, zobojętnia- <lb n="273"/>łam na wszystko. Za dużo wiem. Znam życie <lb n="274"
+               />i ludzi z doświadczenia. Wszedłszy do przedpokoju <lb n="275"/>wiem jaki porządek
+               domowy. Po służbie <lb n="276"/>poznam Pana. Byłam człowiekiem, <lb n="277"/>ludzi ze
+               mnie zrobili obumarłą na <lb n="278"/>wszystko, wszystkie poczucia ludzkie <lb
+                  n="279"/>we mnie zmartwiały. <!--tu skreślenie?--> Dużo mam wrażeń, <lb n="280"
+               />zawsze pamiętam najlepiej ostatnią pacjentkę <lb n="281"/>jeśli sympatyczna, ale
+               tylko jednej na prawdę <lb n="282"/>zapomnieć nie mogę. </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_14.jpg" n="14"
+                  xml:id="pb-7v-14"/><lb n="283"/>Och, jakie straszne refleksje przyszły mi do głowy
+               nad <lb n="284"/>formami światowemi. W tej chwili wróciłam z kolei, <lb n="285"
+               />pacjentkę, którą tak niezwyczajnie polubiłam postano- <lb n="286"/>wiłam zobaczyć
+               raz jeszcze, pierwszy raz ubraną, a może <lb n="287"/>już Jej nie zobaczę nigdy.
+               Stojąc, zdaleka ucieszyło <lb n="288"/>mnie, że obsypana kwiatami bo tego warta, ale
+               pierwszy <lb n="289"/>raz w życiu byłam zazdrosną, widząc jak inni Ją całują, <lb
+                  n="290"/>żegnają, ja która może szczerzej i serdeczniej nie dla formy <lb n="291"
+               />życzyłam Jej szczęśliwej podróży, mogłam się przyjrzeć <lb n="292"/>zdaleka, bo
+               byłam tylko u Niej płatna. o której zapewne <lb n="293"/>na ulicy nie zna, jakież to
+               straszne uczucie? <lb n="294"/>jakie myśli nasuwają się, dopiero czuje się dla <lb
+                  n="295"/>Rodziców wymówką, że mając rodzinę w najwyższych <lb n="296"/>sferach
+               przez skromność wycofali się z Niej, a w <lb n="297"/>człowieku odzywa się ta rodowa
+               duma! Ta nicość na <lb n="298"/>świecie! Rodzimy się i umieramy jednakowo. Ta myśl,
+                  <lb n="299"/>że przez kilka tygodni dotyka się Jej ciała z dużą swobodą, <lb
+                  n="300"/>że Ją się lepiej zna jak wszyscy Ją otaczający, bo się <lb n="301"/>Ją
+               widzi piękną, naturalną, jak Ją Pan Bóg stworzył, <lb n="302"/>świeżą po
+               przebudzeniu, kiedy kobieta ma najwięcej <lb n="303"/>uroku, a z chwilą kiedy Ci
+               zapłaci nie wolno Ci <lb n="304"/>rzucić „szczęśliwej podróży”. Ja jednak wpatrywałam
+                  <lb n="305"/>się w Nią cały czas, jak biedny kochanek, który </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_15.jpg" n="15"
+                  xml:id="pb-8r-15"/><lb n="306"/>ma wszelkie prawa, ale w obec męża znać Jej nie
+                  <lb n="307"/>może. Teraz dopiero rozumiem jak mu serce pękać <lb n="308"/>musi!
+               Naturalnie że mnie nie widziała, albo i <lb n="309"/>nie chciała widzieć, bo Jej nie
+               wypada, niemam <lb n="310"/>Jej za złe. Kiedy pociąg ruszył wyszłam z westchnie- <lb
+                  n="311"/>niem do Boga by szczęśliwie zajechała. I znowu <lb n="312"/>o Niej
+               zapomnieć nie mogę. Smutno mi bardzo! <lb n="313"/>Pod względem fizjologicznym
+               straszna zmiana <lb n="314"/>we mnie zaszła. Obcowanie z mężczyznami jako <lb n="315"
+               />pacjentami, nie robiło na mnie wrażenia, bo <lb n="316"/>kochałam raz. Niestety
+               jestem tylko zwierzęciem <lb n="317"/>jak każdy człowiek, ciągłe podniecanie przez
+               pacjentki, <lb n="318"/>próby ogniowe z mężczyznami, rozmowy strasznie <lb n="319"
+               />podniecające, denerwują mnie chwilami strasznie. <lb n="320"/>Miłość to bajka dla
+               dzieci! ale krew krąży w <lb n="321"/>człowieku, mimo woli, mając ciągłe pobudki, <lb
+                  n="322"/>dotykając się ciał ludzkich, zawsze nagich <lb n="323"/>rozbudzają się
+               nim namiętności, ogromna siła <lb n="324"/>woli chroni od pociągu do upadku, mając
+                  <lb n="325"/>ciągłe okazye, a nawet czasem walki. Człowiek <lb n="326"/>musi
+               kochać, dla tego zdaje mi się dałam <lb n="327"/>się opanować mej okrutnej kochance,
+               zastępując <lb n="328"/>to inne namiętności, kodeksem karnym i <lb n="329"/>moralnym
+               nie wzbronione, miłość ta chroniła <lb n="330"/>mnie od wszystkiego. Gdybym była
+               młodszą, nie </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_16.jpg" n="16"
+                  xml:id="pb-8v-16"/>
+               <lb n="331"/>wiem, czybym wytrwała w wiecznej cnocie i poście. <lb n="332"/>Jakie to
+               przyjemne chwile były naszej miłości, <lb n="333"/>chociaż prześladowali nas, nie
+               wierząc w naszą <lb n="334"/>idealność, ale nas podniecało! Każdy całus był <lb
+                  n="335"/>wybuchem namiętnej miłości, a wiele ich było zawsze? <lb n="336"/>Odczuć
+               nikt tego nie potrafi, co nas posuwało ku <lb n="337"/>sobie, ale godzinami
+               pieszczoty nas nie nudziły. <lb n="338"/>A po każdem gniewie więcej nas coś łączyło,
+                  <lb n="339"/>każde zbliżenie się do siebie było dziwnie namiętnem. <lb n="340"
+               />Pierwszy raz w moim życiu miłość tak słodka <lb n="341"/>i nie występna. Zaczęłam
+               robić uwagi nad <lb n="342"/>pacjentkami dla czego sobie twarz massują. <lb n="343"
+               />Wezwano mnie do rossyanki, mieszkanie <lb n="344"/>jakie się w Warszawie nie
+               widuje, drzwi <lb n="345"/>drewniane zamknięte na haczyk, na poddaszu, <lb n="346"
+               />bieda, nieład, dzieci pełnią funkcyę <!--skreślone słowo "elegantki"?-->
+               <lb n="347"/>służącej, kobieta młodo względnie elegancko <lb n="348"/>ubrana: pokój
+               sypialny przy tamtej biedzie niby <lb n="349"/>elegancki, wdowa, ta kobieta płaci mi
+               tyle <lb n="350"/>dla utrzymania młodości. Po kilku dniach <lb n="351"/>opowiada mi,
+               że jest rządcą trzech domów. Kto <lb n="352"/>Jej
+               <!--skreślone słowo "dawał"?-->pozwoli wbrew zakazom? Komissarz. <lb n="353"/>Kwestya
+               rozwiązana. Ta kobieta, matka </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_17.jpg" n="17"
+                  xml:id="pb-9r-17"/><lb n="354"/>dwojga dzieci, żyjąca w takim niedostatku, nie
+               żałuje <lb n="355"/>na upiększenie twarzy, by sprzedać swoje ciało. <lb n="356"/>Cały
+               pół świat upada z miłości każda z nich mi opowiada <lb n="357"/>że kochała raz w
+               życiu mając lat 16, widocznie <lb n="358"/>te biedne dziewczęta upadają wierząc
+               uwodzicielom, <lb n="359"/>zapłacone za to puszczają się potem z profesyi. <lb
+                  n="360"/>Czyż je można potępiać? ofiary zepsutej <lb n="361"/>młodzieży, która je
+               potępia niegodziwie potępia. <lb n="362"/>Typ, który może być wyzyskany na scenę.
+               Kobieta <lb n="363"/>niemłoda fizycznie niemożebnie zrujnowana, <lb n="364"/>w
+               przypuszczeniu, że może Jej wypadnie być towarzyszką <lb n="365"/>młodych panien,
+               chce odświeżyć każdą część ciała, <lb n="366"/>począwszy od farbowania włosów, utycia
+               odświeżenia <lb n="367"/>cery, rąk itd. całą godzinę w sposób komiczny <lb n="368"
+               />wyłuszcza mi swoje wymagania, słucham bo <lb n="369"/>zdaje mi się że jestem w
+               Teatrze. Cóż Jej mogę <lb n="370"/>powiedzieć? że ruina? Zalecam Jej środki
+                  domowe<anchor n="11" xml:id="note-t-11"/>
+               <lb n="371"/>by Ją nie odprawić z niczem. Za to obdarza mnie <lb n="372"/>tysiącami
+               błogosławieństw za dobre słowo. Jakaś <lb n="373"/>pasażerka z kuferkiem w
+               przejeździe, którą taniej <lb n="374"/>kosztowało jak przeczekanie w cukierni,
+               poprawia <lb n="375"/>toaletę, czesze się, na usilne prośby massuję <lb n="376"/>Jej
+               twarz, po skończeniu powiada mi, że za <lb n="377"/>miesiąc będzie u mnie zapłaci
+               razem minęło <lb n="378"/>od tego czasu dwa lata.
+               <!--nieczytelny podpis Marii Jadwigi Strumff-->
+            </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_18.jpg" n="18"
+                  xml:id="pb-9v-17"/><lb n="379"/>Młody dragon<anchor n="12" xml:id="note-t-12"/>
+               kocha się w Polce i żąda usunięcia <lb n="380"/>natychmiastowego zmarszczki około
+               nosa, nie chce <lb n="381"/>wyjść odemnie, żeby Mu dać koniecznie coś że był <lb
+                  n="382"/>u mnie, z słoiczkiem kremu szczęśliwy wychodzi. <lb n="383"/>Młody
+               człowiek jedzie w konkury do Padwy, płaci <lb
+                  n="384"/>mi z góry za trzy dni, na drugi dzień żąda opadłwszy <lb n="385"/>wyjęcia
+               zatem dwóch wągrów z twarzy, nie zgodziłam <lb n="386"/>się na to, na cyferblacie
+               głupota wyryta, więcej <lb n="387"/>nie przyszedł, pomimo że zapłacił. Przychodzi
+               dama mnie <lb n="388"/>jakaś nie młoda, która leczyła się we wszystkich <lb n="389"
+               />stolicach na nogę i proponuje mi 2 rss. jeśli <lb n="390"/>trafię w Jej myśl, co
+               Jej zależało na tem nie <lb n="391"/>wiem? widocznie nie wie co z pieniędzmi <lb
+                  n="392"/>zrobić! Z opowiadań Jej mogłam dojść jakie <lb n="393"/>przypuszczają
+               choroby, łatwo mi było zrobić z <lb n="394"/>własnej praktyki wniosek, ucieszyła się
+                  <lb n="395"/>zapłaciła mi 3 rss. Dwie cienkie Angielki <lb n="396"/>czarno i
+               szumiąco, widocznie do najlepszej <lb n="397"/>sfery należące żądały usunięcia
+               odcisku, ale <lb n="398"/>pytały się wiele biorę za wizytę, odpowiedzia- <lb n="399"
+               />łam, że niemam czasu pójść, dałam Jej <lb n="400"/>radę, żeby sobie to sama
+               zrobiła, wyjęła 25 kop. <lb n="401"/>nie przyjęłam pytały mi się naiwnie </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_19.jpg" n="19"
+                  xml:id="pb-10r-19"/><lb n="402"/>Matka i córa Albionu, dla czego nic nie biorę,
+                  <lb n="403"/>odpowiedziałam, że albo biorę porządnie, albo <lb n="404"/>nic,
+               serdecznie mi podziękowały spytawszy się <lb n="405"/>z całą naiwnością jeszcze raz o
+               informacye. <lb n="406"/>Nowe refleksye nad ludźmi, nad sobą. Zyskałam <lb n="407"
+               />sobie zapewne zaciętego wroga. Piękna pacjentka o której <lb n="408"/>wspominałam,
+               że od trzech miesięcy mi jest winną, <lb n="409"/>proszoną przezemnie o zapłacenie
+               długu, zagroziłam <lb n="410"/>Jej, że się udam do męża, w dwa dni zdobyła się na <lb
+                  n="411"/>zapłacenie rsb.6, cóż za brak ambicyi, honoru, <lb n="412"/>osobistej
+               godności! Żebym miała ostatnie sprzedać nie <lb n="413"/>zrobiła bym tego, i ta dama
+               śmie ironicznie pisać, <lb n="414"/>że taki biedny rachunek stanowi coś u mnie, a ona
+                  <lb n="415"/>pomimo brylantów przepychu itd. nie może go <lb n="416"/>zapłacić co
+               za bezczelność i 2 strony nabite sarkazmem. <lb n="417"/>Czyż na prawdę zna tak mało
+               ludzi! Za Cnotę nie płacą! <lb n="418"/>widzę to z doświadczenia. Widocznie dla
+               meżczyzn nie <lb n="419"/>trzeba być ładną i młodą, na tem polu tylko coś <lb n="420"
+               />można zrobić chciwością daleko widzę nie zajdę! <lb n="421"/>Niemam za złe innym
+               sobie nie poczytuję za zasługę, <lb n="422"/>jedynie miłość czyli pociąg fizyczny
+               mógł by mnie <lb n="423"/>posunąć na złą drogę, ale pieniądz nigdy. Chociaż <lb
+                  n="424"/>Bóg świadkiem że rubel dla mnie majątek w tej <lb n="425"/>chwili, ale
+               dla tego miała bym robić źle? To w <lb n="426"/>takim razie mogłabym i oszukiwać, bo
+               jakikolwiek <lb n="427"/>zarobek niegodziwy to jedno, tembardziej stracić <lb n="428"
+               />to, co jest jedynym skarbem kobiety, Nagą </ab>
+         </div>
+         <div>
+            <ab><pb facs="https://tei2-cantaloupe.ckc.uw.edu.pl/iiif/3/MHW_A_II_456_1_21.jpg" n="20"
+                  xml:id="pb-10v-20"/><lb n="429"/>pruderie, ale trudno zwieżęcych skłonności nie
+               miałam <lb n="430"/>nigdy. Pan jeden przed kilkoma miesiącami przyszedł <lb n="431"
+               />do mnie na massaż, widocznie w Wiesbadenie
+               <lb n="432"/>miał masażystkę do wszystkiego, bo zanim <lb n="433"/>zdążyłam ręce umyć
+               już był rozebrany, nie wypadało <lb n="434"/>mi zwrócić uwagi, On to wziął za dobrą
+               wróżbę, <lb n="435"/>złapał mnie za rękę i gdyby nie wrodzona siła <lb n="436"
+               />fizyczna, byłby zrobił ruch, na które podobno Panie <lb n="437"/>z najlepszych sfer
+               się zgadzają, bo Im nie szkodzi. <lb n="438"/>Krew mi uderzyła do głowy z oburzenia,
+               że śmiał <lb n="439"/>mnie obrazić, ale godność osobista nie pozwoliła <lb n="440"
+               />Mu tego objawić. Krwią zalana wyszłam, zapa- <lb n="441"/>liwszy papierosa malować
+               i nie weszłam póki <lb n="442"/>jegomość nie wyszedł miał przyjść nazajutrz, <lb
+                  n="443"/>naturalnie kazałam Go nie przyjąć. Minęło <lb n="444"/>parę miesięcy.
+               Wczoraj wieczorem jakiś Pan <lb n="445"/>przyszedł kuchnią, służąca kazała Mu dzwonić
+                  <lb n="446"/>frontem, wchodzę, patrzę ten sam, ja co się <lb n="447"/>nigdy nie
+               czerwienię, czułam że jestem buraczana <lb n="448"/>zapanowałam nad sobą i czekałam,
+               co powie (wie- <lb n="449"/>dział, że przyjmuję od 2 4, a przyszedł o g7w. i nie
+               frontem). <lb n="450"/>Mówił, że wyjeżdżał, żeby go massować dałam Mu <lb/>adres do
+               doktora, na zapytanie dla czego go nie <lb n="451"/>massuję wszak to jedno czy
+               massażystka odpowie- <lb n="452"/>działam że on mi za dużo czasu zajmuje,
+               wyszedł</ab>
+         </div>
+         
+         <div type="notes">
+            <note n="1" xml:id="n-1" target="#note-t-1">
+               <ab>Rodzicami Marii byli <persName ref="#SSz">Stanisław (Salomon) Szancer</persName>
+                  i <persName ref="#ESz">Emma z Löwensteinów</persName>. Stanisław (Salomon) Szancer
+                  (1817 Brzoza – 1876 Piotrków) – syn lekarza Jakuba Szancera i Salomei (Gitli
+                  Gołdy) z Cymblerów. Miał siedmioro rodzeństwa. Studia medyczne ukończył w Wilnie w
+                  1842 r. W 1845 r. ożenił się w Krakowie z Emmą z Löwensteinów, z którą miał 7
+                  dzieci (dwóch synów zmarło w dzieciństwie). Emma Szancer (1822 Bydgoszcz – 1893
+                  Warszawa) była córką Abrahama Löwensteina i Rozalii z Flatauów. Ta zaś była
+                  wnuczką Szmula Zbytkowera i Judyty Jakubowiczowej. Została pochowana w grobie
+                  rodzinnym na żydowskim cmentarzu na Pradze, który ufundował jej prapradziadek.
+               </ab>
+            </note>
+            <note n="2" xml:id="n-2" target="#note-t-2">
+               <ab>Mężem Marii był <persName ref="#HS">Hipolit Strumff</persName> (1853 Warszawa –
+                  1916 Wiedeń) – syn Adolfa Izydora (Ojzera) Strumpfa i Zofii (Cypy) z Horowitzów.
+                  Adolf Izydor (Ojzer) Strumpf (1823-1857) – ojciec Hipolita był nauczycielem szkoły
+                  elementarnej w Warszawie. Rok przed śmiercią przyjął chrzest w Kościele
+                  ewangelicko-reformowanym. Wcześniej uczynili to czterej jego bracia. </ab>
+            </note>
+            <note n="3" xml:id="n-3" target="#note-t-3">
+               <ab>Szpitale. XIX wiek przyniósł istotne przekształcenia w funkcjonowaniu szpitali na ziemiach
+                  polskich i w całej Europie. Do końca XVIII stulecia szpitale były zarządzane i
+                  prowadzone przez kościół i zakony. Służyły nie tyle jako placówki, w których
+                  leczono chorych, ale przede wszystkim jako miejsce schronienia i opieki dla
+                  ubogich (K. Milik, Wpływ Kościoła katolickiego na rozwój szpitalnictwa polskiego w
+                  XVI–XIX wieku, „Zeszyty Historyczne” 2019, t. 18, s. 69–84). Na prze- łomie XIX
+                  wieku oprócz sekularyzacji szpitali i sprowadzenia kleru do funkcji wyłącznie
+                  opiekuńczej, nastąpiły również zmiany na poziomie administracyjnym. Rozpoczęto
+                  wydzielanie odrębnych oddziałów: położniczych, dziecięcych, okulistycznych,
+                  psychiatrycznych, chorób wewnętrznych, chorób wenerycznych i innych. Wprowadzono
+                  urzędy kontroli. Stopniowo poprawiały się warunki w szpitalach pod względem
+                  higieny, wyposażenia, wyżywienia i poziomu opieki lekarskiej (E. Mazur, Szpitale w
+                  Królestwie Polskim w XIX wieku, Instytut Archeologii i Etnologii PAN, Warszawa
+                  2008). Zmiany te wiązały się przede wszystkim z rozwojem medycyny, ale także z
+                  ewolucją w przestrzeganiu zasad zachowania zdrowia i czystości (T. Jarnatowski,
+                  Hygiena czyli Nauka o zdrowiu, nakładem autora, Poznań 1878; A. Napierała, Higiena
+                  prywatna w polskich publikacjach popularnych i popularnonaukowych w drugiej
+                  połowie XIX i na początku XX wieku. Koncepcje i porady, Instytu Historii UAM,
+                  Poznań 2018). Poziom świadomości w kwestiach higieny uzależniony był od
+                  stratyfikacji społecznej – znacznie szybciej wdrażały ją osoby mające dostęp do
+                  literatury naukowej, popularnonaukowej i zagranicznych nowinek. Bogaci pacjenci
+                  nie przebywali w szpitalach – opiekę medyczną zapewniano im w zaciszu domowym. W
+                  XIX wieku w Królestwie Polskim213 szpitalnictwo dynamicznie się rozwijało. W
+                  latach 1832–1870 powsta- ło kilkadziesiąt nowych placówek leczniczych, w Warszawie
+                  do roku 1867 funkcjonowało ich czternaście. W 1870 roku szpitale zostały
+                  podporządkowane władzom carskim. Od 1816 roku na Uniwersytecie Warszawskim działał
+                  Wydział Lekarski, a po jego zamknięciu w 1857 roku uruchomiono Akademię Medyko-
+                  -Chirurgiczną. Absolwenci kierunków medycznych często zasilali kadrę warszawskich
+                  szpitali. Początkowo pracowali nieodpłatnie, następnie otrzymywali niewielkie
+                  pensje, a w po- łowie stulecia ich wynagrodzenia zostały określone odgórnymi
+                  przepisami. Kwestia praktyk studenckich i zawodowych nie została uregulowana w XIX
+                  wieku (M. Osiecka, Szpitale warszawskie w świetle akt Komisji Województwa
+                  Mazowieckiego z lat 1815–1867, „Miscellanea Historico- -Archivistica” 2017, t. 24,
+                  s. 207–221). Pomimo wielu zmian poziom opieki lekarskiej oraz wyposażenia i
+                  czysto- ści pod koniec stulecia nie był jeszcze odpowiedni. Powoli zmieniała się
+                  również świadomość społeczna, w której szpitale nadal funkcjonowały jako przytułki
+                  i miejsca opieki. Jeszcze w 1897 roku czasopismo naukowe „Ateneum” donosiło o
+                  ludziach ubogich i niedołężnych, którzy w miesią- cach zimowych szukali
+                  schronienia w szpitalach: „ubodzy tej kategorii przyjęci do szpitala być nie mogą,
+                  nie powinni. A jednak są przyjmowani i nie bywają wydalani, pomimo stwierdzenia
+                  nieuleczalności, po prostu dlatego, że lekarz często nie ma serca wyrzucić na bruk
+                  biedaka, który choć nie potrzebuje właściwego leczenia, ale potrzebuje przecież
+                  opieki i który nie ma gdzie się podziać” (L. Grendyszyński, Opieka nad biednymi i
+                  domy schronienia, „Ateneum” 1897, t. 3, z. 8, s. 198–210).</ab>
+            </note>
+            <note n="4" xml:id="n-4" target="#note-t-4">
+               <ab><hi rend="ital">Leve toi</hi> (fr., poprawnie <hi rend="ital">lève-toi</hi>) –
+                  wstawaj.</ab>
+            </note>
+            <note n="5" xml:id="n-5" target="#note-t-5">
+               <ab>Kremy. Elementem XIX-wiecznego ideału urody kobiecej były drobne, delikatne dłonie o
+                  jasnej skórze, bez jakichkolwiek znamion i przebarwień. Autorka popularnego
+                  poradnika, baronowa Blanche Staffe podawała sposoby na „udelikatnienie” skóry
+                  dłoni, takie jak nacieranie ich przed snem suchą kaszą albo miksturą złożoną z
+                  gliceryny, boraksu i żółtek jaja, poranne i wieczorne mycie w kleiku z kaszy. Z
+                  czasem coraz większą popularność zyskiwała pielęgnacja przy użyciu kremu.
+                  Pacjentka Strumff wspominała o kremowaniu dłoni i prosiła ją o krem. Pod koniec
+                  XIX wieku używanie kremów i balsamów do rąk było już popularne. Kremy wytwarzano w
+                  domu według sprawdzonych receptur, ale w sprzedaży znajdowały się już gotowe
+                  produkty. Do pielęgnacji dłoni polecano cold cream, powszechnie używany do twarzy.
+                  Opracowanie pierwotnej receptury na cold cream przypisuje się rzymskiemu lekarzowi
+                  Galenowi (ok. 130–200 n.e.). Miał się on składać z wody, wosku pszczelego i oliwy
+                  z oliwek. Po wyparowaniu wody krem miał zostawiać na skórze uczucie chłodu. Skład
+                  kremu uległ zasadniczej zmianie ok. roku 1780, kiedy to zaczęto do niego dodawać
+                  spermacet wielorybi. W drugiej połowie XIX wieku przemysłowo wytwarzany cold cream
+                  składał się z wosku pszczelego, oleju mineralnego bądź wazeliny, wody destylowanej
+                  oraz przedłużającego trwałość boraksu. Dodawano także substancji zapachowych i
+                  różnych składników roślinnych. Pod koniec stulecia modny był ogórkowy cold cream,
+                  używany, m.in. przez Sarah Bernhardt (V. Sherrow, For Appearance’ Sake. The
+                  Historical Encyclopedia of Good Looks, Beauty, and Grooming, Bloomsbury Academic,
+                  Phoenix 2001). Cold cream znany był na ziemiach polskich. Baronowa Staffe
+                  rekomendowała miesięczną kurację przesuszonych, zniszczonych dłoni za jego pomocą.
+                  Po niej miało już wystarczyć nacieranie suchą kaszą. Maria Jadwiga Strumff mogła
+                  sama przygotowywać cold cream albo kupować go w aptece.</ab>
+            </note>
+            <note n="6" xml:id="n-6" target="#note-t-6">
+               <ab><hi rend="ital">J'étais du grecque pour moi</hi> (fr., poprawnie <hi rend="ital"
+                     >Je pense que j'étais grecque</hi>) – "Moim zdaniem byłam Greczynką." Aluzja do
+                  homoseksualizmu.</ab>
+            </note>
+            <note n="7" xml:id="n-7" target="#note-t-7">
+               <ab>Mowa o Gabrieli Zapolskiej. Gabriela Zapolska (1857-1921) – polska aktorka,
+                  dramatopisarka, powieściopisarka, publicystka, krytyczka teatralna i artystyczna.
+                  Przedstawicielka polskiego naturalizmu, wykpiwała moralną obłudę mieszczaństwa;
+                  pisała komedie satyryczne, dramaty i powieści.</ab>
+            </note>
+            <note n="8" xml:id="n-8" target="#note-t-8">
+               <ab>Histeria. Maria Strumff, klasyfikując swoje pacjentki jako histeryczki, wskazywała na ich
+                  dziwne zachowanie, nadmierne pobudzenie seksualne, skłonność do czerwienienia się,
+                  powtarzając w ten sposób funkcjonujący w popularnym piśmiennictwie medycznym obraz
+                  kobiecej neurozy ściśle związanej z seksualnością. Strumff podzielała wciąż
+                  popularny na przełomie XIX i XX wieku pogląd, że histeria była przypadłością
+                  przede wszystkim kobiecą. Był on zgodny z ówczesnym stanem wiedzy medycznej, wedle
+                  którego histeria była odmianą neurozy kobiecej, podczas gdy hipochondria –
+                  męskiej. Teorie na temat histerii jako dolegliwości wynikają- cej z
+                  przemieszczania się „wysuszonej macicy” w ciele kobiecym rozwijane były od
+                  starożytności. Począwszy od końca XVIII wieku, pod wpływem obserwacji empirycznych
+                  oraz rozwoju wiedzy o kobiecej anatomii, dolegliwości histeryczne zaczęto łączyć z
+                  zaburzeniem nerwów, uznawanym za częściej występujące w przypadku kobiet. Wtedy
+                  też histeria stała się tematem modnym w piśmiennictwie medycznym (E. Nowosielska,
+                  Melancholia, szaleństwo i inne „choroby głowy” w Rzeczypospolitej w XVII i XVIII
+                  wieku, Instytut Historii PAN, Warszawa 2021, s. 119). Wiek XIX przyniósł przejęcie
+                  przez dyskurs medyczny wyidealizowanego obrazu kobiety jako istoty wrażliwej i
+                  słabej, dla której niebezpieczne były wszelkie zakłócenia równowagi (E. Trillat,
+                  Historia histerii, Ossolineum, Wrocław 1993, s. 88). W 1818 roku Jean- -Baptiste
+                  Louyer-Villermay na około pięćdziesięciu stronach Dictionnaire des sciences
+                  médicales (Paryż 1812) definiował histerię, łącząc ją z „typowo kobiecą”
+                  delikatnością oraz z zaburzeniami funkcjonowania macicy. Obok samego terminu
+                  histeria, posługiwał się jej synonimami, takimi jak: histeralgia, namiętność i
+                  uczuciowość histeryczna, nerwica macicy, zapalenie macicy, uduszenie macicy czy
+                  „wniebowstąpienie łona”. Wszystkie te terminy lokowały się w tradycji opisu
+                  patologii funkcjonowania organizmu (S. Arnaud, L’invention del’hystérie au temps
+                  des Lumières (1670–1820), EHESS, Paris 2014, s. 11). Tworząc kliniczny opis ataku
+                  histerycznego, Louyer-Villermay wskazywał na jego podobień- stwo do apopleksji.
+                  Wyróżnił kolejne etapy: aurę, fazę drgawkową, zaburzenia świadomości ze stanem
+                  delirycznym i różnej mocy urojeniami, koniec ataku z wydaleniem dużej ilości
+                  jasnego moczu oraz wydzieliny pochwowo- -macicznej, czemu towarzyszy orgazm.
+                  Ponieważ jego zdaniem przyczyna histerii leżała w narzuconej lub dobrowolnej
+                  wstrzemięźliwości wiodącej do zaburzeń funkcjonowania macicy, jako remedium
+                  zalecał prowadzenie „uporządkowanego” życia seksualnego, z regularnymi stosunkami.
+                  Wśród czynników ryzyka predestynujących do histerii wyliczał: nerwowy temperament,
+                  miękkie i „zniewieściałe” wychowanie, „układ maciczny gorący181 i lubieżny”, serce
+                  zbyt czułe, siedzący tryb życia, zbyt długie przebywanie w ciepłym łóżku. Dodawał,
+                  że szczególnie narażone są kobiety o smagłej cerze, oczach „czarnych i żywych”,
+                  wydatnych ustach, białych zębach, bujnych włosach. Wierny konserwatywnemu
+                  przekonaniu o konieczności kontrolowania kobiecej seksualności, zalecał „kurację
+                  moralną” i sugerował, aby umysł histeryczki kierować ku ideałom religii i „zdrowia
+                  moralnego” (E. Trillat, Historia histerii…, s. 88). Związki histerii z przeżyciami
+                  psychicznymi, z duchowością, a z drugiej strony – z seksualnością sprawiały, że
+                  zarówno w piśmiennictwie medycznym, jak i w publicystyce i literaturze XIX wieku
+                  stała się ona metaforą lęków i oczekiwań kulturowych w stosunku do kobiet, wręcz
+                  służąc ich mitologizacji (J.L. Beizer, Ventriloquized Bodies. Narratives of
+                  Hysteria in Nineteenth-century France, Cornell University Press, Ithaca 1994, s.
+                  35). Do „teorii macicznej”, w drugiej połowie stulecia porzuconej na rzecz badań
+                  nad środowiskiem społecznym, trybem życia, wcześniejszymi przeżyciami oraz nad
+                  funkcjonowaniem umysłu w stanie hipnozy i ekstazy religijnej, powrócił Jean-Martin
+                  Charcot. Jego interpretacja nie ograniczała się jednak do szukania źródeł histerii
+                  w braku stosunków seksualnych. Histeria była dla niego przypadłością
+                  neurologiczną. Wyróżniał histerię naturalną i sztuczną (wywołaną na przykład w
+                  stanie hipnozy, w letargu) oraz pourazową, którą diagnozował także u mężczyzn. W
+                  1870 roku Charcot stworzył kliniczny obraz „wielkiej histerii”, składającej się z
+                  czterech faz: zwiastuna ataku (mógł nim być ból w okolicy jajników), ataku
+                  właściwego z krzykiem, blado- ścią, utratą świadomości i upadkiem, po którym
+                  następowało zesztywnienie mięśni, fazy klonicznej lub błazeńskiej z zamaszystymi
+                  ruchami, skrętami ciała, teatralnymi gestami, fazy rozluź- nienia ze szlochem,
+                  płaczem, śmiechem. Prowadzone na ordynowanym przez niego oddziale paryskiej
+                  kliniki Salpêtrière pokazy ataków histerycznych cieszyły się popularnością wśród
+                  publiczności, a zadaniem utworzonego na jego polecenie laboratorium
+                  fotograficznego było dokumentowanie symptomów schorzenia. Mimo że Charcot opisywał
+                  histerię jako zjawisko wielowymiarowe, wskutek jego badań ponownie została ona
+                  połączona z kobiecą seksualno- ścią (A. Alksnin, Augustine: króliczek Charcota,
+                  „Teksty Drugie” 2014, nr 1, s. 315). Błędna interpretacja jego prac w Stanach
+                  Zjednoczonych doprowadziła do prawdziwej epidemii wycinania jajników. Przełom w
+                  badaniach nad histerią przyniosły badania Freuda oraz rozwój psychoanalizy. W
+                  dalszym ciągu jednak aktualne pozostawało utożsamienie jej z kobiecością. Na
+                  ziemiach polskich wiedzę na temat histerii popularyzowały tłumaczenia
+                  zagranicznych prac medycznych, przede wszystkim francuskich, oraz prace oryginalne
+                  rodzimych autorów. Powtarzano w nich pogląd o płciowym uwarunkowaniu zaburzeń
+                  psychicznych, przypisujący kobietom histerię maciczną, natomiast mężczyznom –
+                  hipochondrię (E. Nowosielska, Melancholia, szaleństwo i inne…, s. 121). Teoria o
+                  związku histerii z niekontrolowaną seksualnością i zaburzeniami funkcjonowania
+                  macicy utrzymywa- ła się jeszcze na początku XX wieku.182 Stanisław Kurkiewicz
+                  wyróżniał typ „osób macinniczych” czyli histerycznych, których „płciopopęd”
+                  gwałtowny i „niecierpliwy” przybierał „dziwaczne formy” (Z docieków [studyów] nad
+                  życiem płciowem. Luźne osnowy [tematy], nakładem autora, Kraków 1905, s. 7).
+                  Natomiast Stanisław Breyer źródło „kolek histerycznych” widział w organach
+                  płciowych, samą histerię opisując jako dolegliwość „prawie wyłącznie” kobiecą,
+                  wynikającą z „rozdrażnienia nerwów” (Lekarz domowy, „Prawda”, Kraków 1911, s.
+                  135).</ab>
+            </note>
+            <note n="9" xml:id="n-9" target="#note-t-9">
+               <ab>Operacje plastyczne. Maria Jadwiga Strumff wspomina o niezwykle rzadkim pod koniec XIX wieku zabiegu
+                  medycyny estetycznej. Wprawdzie początki nowoczesnej chirurgii plastycznej datuje
+                  się na pierwszą połowę stulecia, ale ówczesne działania miały maskować blizny,
+                  uzupełniać pourazowe ubytki skóry i kości. Do połowy XIX wieku193 operacjom
+                  plastycznym twarzy poddawali się głównie mężczyźni, a ich powodem najczęściej była
+                  chęć naprawienia szkód wyrządzonych przez kiłę, czyli rekonstrukcja nosa. Wraz z
+                  wprowadzeniem znieczulenia w 1846 roku, a następnie zasad antyseptyki w 1867,
+                  operacje plastyczne stały się mniej bolesne i mniej ryzykowne, przez to nieco
+                  powszechniejsze. W dalszym ciągu jednak mieściły się przede wszystkim w zakresie
+                  chirurgii rekonstrukcyjnej. Dopiero przełom XIX i XX wieku przyniósł
+                  zainteresowanie medycyny procesami starzenia się skóry i szukaniem chirurgicznych
+                  sposobów przywracania młodości (J.P. Bennett, Aspects of the History of Plastic
+                  Surgery Since the 16th Century, „Journal of the Royal Society of Medicine” 1983,
+                  t. 76, s. 156). Zabiegom zaczęły poddawać się kobiety w pogoni za ideałem urody i
+                  mijającą młodością. Na prze- łomie stuleci w prasie pojawiały się reklamy
+                  gabinetów lekarskich oferują- cych „operacje kosmetyczne” twarzy, nosa, uszu i
+                  biustu. Cały czas jednak były to zabiegi rzadkie, ryzykowne i bardzo kosztowne. W
+                  Europie medycyna estetyczna nabrała rozmachu dopiero po I wojnie światowej, kiedy
+                  rozwinęły się nowatorskie techniki chirurgiczne w związku z potrzebą leczenia
+                  tysięcy okaleczonych żołnierzy. Następnie były stosowane na większą skalę w
+                  zabiegach estetycznych. Łą- czyło się to ze wzrostem społecznej akceptacji dla
+                  chirurgicznego poprawiania urody (S. Fraser, Cosmetic Surgery, Gender and Culture,
+                  Springer, New York 2003, s. 15). Wcześniej jednak większości pacjentek musiały
+                  wystarczyć odmładzające kosmetyki i mniej inwazyjne zabiegi, takie jak różne formy
+                  masażu. Strumff nie oferowała zabiegów mieszczących się w zakresie chirurgii
+                  plastycznej. Nie sposób też ustalić, kim mógł być dwukrotnie przez nią
+                  wzmiankowany doktor K., gdyż początki polskiej medycyny estetycznej datują się na
+                  początek lat 50. XX wieku.</ab>
+            </note>
+            <note n="10" xml:id="n-10" target="#note-t-10">
+               <ab>Palenie. Tytoń był znany w Europie od XVI wieku, jednak palenie stało się powszechnym
+                  zwyczajem dopiero w XIX stuleciu. Zaczęto łączyć je z życiem towarzyskim i pełniło
+                  funkcję męskiego rytuału. „Wspólne palenie” było wydarzeniem wpisywanym do
+                  kalendarza stowarzyszeń naukowych, handlowych i dobroczynnych, wieńczyło imprezy
+                  sportowe, zebrania i posiedzenia samorządów. W mieszczańskiej kulturze wiktoriań-
+                  skiej Anglii palenie fajki albo cygara w gabinecie, wyłącznie w męskim
+                  towarzystwie, było przyjemnością świadczącą o statusie. Było to popularne w
+                  klubach gentlemana, a w przypadku robotników i drobnych urzędników – w pubach,
+                  gdzie palono gorszej jakości tytoń w glinianych fajkach, często rozdawanych za
+                  darmo. W drugiej po- łowie wieku zaczęły się upowszechniać195 papierosy. W 1847
+                  roku w Wielkiej Brytanii Philip Morris rozpoczął sprzedaż ręcznie skręcanych
+                  papierosów tureckich. W 1881 roku powstała American Tobacco Company. W niższych
+                  warstwach spo- łecznych używano przede wszystkim papierosów skręcanych
+                  samodzielnie. Wspólne ich palenie uznawane było za „publiczną demonstrację
+                  męskości” (M. Hilton, Palenie a życie towarzyskie, w: Dym. Powszechna historia
+                  palenia, red. S.L. Gilman, Z. Xun, przeł. J. Sochoń-Jasnorzewska, Towarzystwo
+                  Autorów i Wydawców Prac Naukowych Universitas, Kraków 2009, s. 129). W
+                  przedrozbiorowej Polsce upowszechnienie tytoniu nastąpiło pod wpływem tureckich
+                  obyczajów. W 1770 roku ustanowiono monopol na manufaktury tytoniowe, które już
+                  wtedy przynosiły duże zyski. W ciągu XIX wieku, tak jak w całej Europie, palenie
+                  cygar i wysokogatunkowego tytoniu fajkowego było przywilejem mężczyzn z klas
+                  wyższych. W dworach szlacheckich i domach mieszczańskich istniały gabinety, w
+                  których mężczyźni mogli oddawać się przyjemności palenia. Robotnicy i chłopi
+                  zadowalali się fajką nabitą pośledniejszymi gatunkami tytoniu oraz zwijanymi w
+                  bibułkę papierosami. Palenie fajki towarzyszyło chłopom podczas prac polowych, a
+                  papierosa – robotnikom w fabrykach. Ponieważ w powszechnym przekonaniu tytoń miał
+                  dobroczynne działanie, zapobiegał suchotom, łagodził stres i zmęczenie, istniało
+                  przyzwolenie na palenie przez kilkunastoletnich chłopców. Kobiety paliły rzadziej
+                  i w ukryciu. Publicznie z papierosem mogły się pokazać albo damy w bardzo
+                  zaawansowanym wieku, albo osoby wymykające się mieszczańskim konwenansom –
+                  emancypantki, sawantki i sufrażystki, aktorki (zachował się portret Heleny
+                  Modrzejewskiej z papierosem). Palenie przypisywano także pracownicom domów
+                  publicznych, co miało źródło w orientalnych wyobrażeniach odalisek palących fajkę
+                  wodną albo opium w haremie (M. Alloula, The Colonial Harem, University of
+                  Minnesota Press, Minneapolis 1986, s. 44–47). Zmiany w postrzeganiu palenia przez
+                  kobiety zaczęły zachodzić dopiero w ostatnich dekadach XIX wieku. Palenie powoli
+                  stawało się atrybutem wyrafinowanej elegancji, symbolizowało atrakcyjność
+                  seksualną i nowoczesność. Od lat 90. wizerunki pięknych kobiet były wykorzystywane
+                  w reklamach wyrobów tytoniowych, palące kobiety stały się częstym tematem
+                  ówczesnej sztuki. Ale reklama była kierowana przede wszystkim do mężczyzn, a
+                  wizerunki modelek były podszyte erotyzmem (D. Mitchell, Kobieta jako element.., s.
+                  298). Wzrastała co prawda tolerancja dla kobiecego palenia w miejscach
+                  publicznych, ale służyło ono seksualizacji kobiet albo miało wymiar subwersywny. W
+                  tym drugim przypadku łączyło się z niezależnością i obecnością w tradycyjnie
+                  męskiej sferze publicznej – na przykład wskazywało na wykonywanie pracy zawodowej
+                  przez kobiety. Dla Marii Strumff papieros, gdy paliła, mógł być symbolem jej stylu
+                  życia – niezależności finansowej i wymykania się mieszczańskiemu stereotypowi
+                  kobiecości. Sama łączyła go ze swoją „męzką naturą”. W dłoni pacjentki, opisanej
+                  jako „elegancka, cała w lokach”, papieros był natomiast atrybutem
+                  atrakcyjności.</ab>
+            </note>
+            <note n="11" xml:id="n-11" target="#note-t-11"><ab>Kremy. Elementem XIX-wiecznego ideału urody
+                  kobiecej były drobne, delikatne dłonie o jasnej skórze, bez jakichkolwiek znamion
+                  i przebarwień. Autorka popularnego poradnika, baronowa Blanche Staffe podawała
+                  sposoby na „udelikatnienie” skóry dłoni, takie jak nacieranie ich przed snem suchą
+                  kaszą albo miksturą złożoną z gliceryny, boraksu i żółtek jaja, poranne i
+                  wieczorne mycie w kleiku z kaszy. Z czasem coraz większą popularność zyskiwała
+                  pielęgnacja przy użyciu kremu. Pacjentka Strumff wspominała o kremowaniu dłoni i
+                  prosiła ją o krem. Pod koniec XIX wieku używanie kremów i balsamów do rąk było już
+                  popularne. Kremy wytwarzano w domu według sprawdzonych receptur, ale w sprzedaży
+                  znajdowały się już gotowe produkty. Do pielęgnacji dłoni polecano cold cream,
+                  powszechnie używany do twarzy. Opracowanie pierwotnej receptury na cold cream
+                  przypisuje się rzymskiemu lekarzowi Galenowi (ok. 130–200 n.e.). Miał się on
+                  składać z wody, wosku pszczelego i oliwy z oliwek. Po wyparowaniu wody krem miał
+                  zostawiać na skórze uczucie chłodu. Skład kremu uległ zasadniczej zmianie ok. roku
+                  1780, kiedy to zaczęto do niego dodawać spermacet wielorybi. W drugiej połowie XIX
+                  wieku przemysłowo wytwarzany cold cream składał się z wosku pszczelego, oleju
+                  mineralnego bądź wazeliny, wody destylowanej oraz przedłużającego trwałość
+                  boraksu. Dodawano także substancji zapachowych i różnych składników roślinnych.
+                  Pod koniec stulecia modny był ogórkowy cold cream, używany, m.in. przez Sarah
+                  Bernhardt (V. Sherrow, For Appearance’ Sake. The Historical Encyclopedia of Good
+                  Looks, Beauty, and Grooming, Bloomsbury Academic, Phoenix 2001). Cold cream znany
+                  był na ziemiach polskich. Baronowa Staffe rekomendowała miesięczną kurację
+                  przesuszonych, zniszczonych dłoni za jego pomocą. Po niej miało już wystarczyć
+                  nacieranie suchą kaszą. Maria Jadwiga Strumff mogła sama przygotowywać cold cream
+                  albo kupować go w aptece.</ab>
+            </note>
+            <note n="12" xml:id="n-12" target="#note-t-12">
+               <ab>Dragon - dawniej żołnierz konny.</ab>
+            </note>
+
+         </div>
+      </body>
+   </text>
+</TEI>

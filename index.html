@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mikroedycja testowa TEI</title>
+        <script src="https://unpkg.com/ceteicean@latest/dist/CETEI.js"></script>
+        <style>
+    body { font-family: sans-serif; line-height: 1.5; margin: 2em; }
+    tei-pb { display: block; color: gray; margin: 1em 0; }
+    tei-seg[ana]::before { content: attr(ana) " | "; color: darkred; font-size: 0.8em; }
+  </style>
+    </head>
+    <body>
+        <h1>Wczytuję edycję TEI…</h1>
+        
+        <div id="edition"></div>
+        
+        <script>
+    let CETEI = new CETEIcean();
+    CETEI.getHTML5("moj_tekst.xml", function(data) {
+      document.getElementById("edition").appendChild(data);
+    });
+  </script>
+    </body>
+</html>
